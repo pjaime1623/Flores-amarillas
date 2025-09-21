@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para mi amorcito</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom, #ffe66d, #fffacd);
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            max-width: 800px;
+            margin: 20px;
+        }
+
+        .flower-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+
+        .flower {
+            width: 100px;
+            height: 100px;
+            position: relative;
+            margin: 15px;
+            animation: growAndRotate 5s ease-in-out infinite;
+        }
+
+        .petal {
+            position: absolute;
+            width: 40px;
+            height: 80px;
+            background-color: #ffd700;
+            border-radius: 50% 50% 0 0;
+            top: 50%;
+            left: 50%;
+            transform-origin: bottom center;
+            transform: translate(-50%, -100%);
+        }
+
+        .petal:nth-child(1) { transform: translate(-50%, -100%) rotate(0deg); }
+        .petal:nth-child(2) { transform: translate(-50%, -100%) rotate(45deg); }
+        .petal:nth-child(3) { transform: translate(-50%, -100%) rotate(90deg); }
+        .petal:nth-child(4) { transform: translate(-50%, -100%) rotate(135deg); }
+        .petal:nth-child(5) { transform: translate(-50%, -100%) rotate(180deg); }
+        .petal:nth-child(6) { transform: translate(-50%, -100%) rotate(225deg); }
+        .petal:nth-child(7) { transform: translate(-50%, -100%) rotate(270deg); }
+        .petal:nth-child(8) { transform: translate(-50%, -100%) rotate(315deg); }
+        
+        .center {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background-color: #8b4513;
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        h1 {
+            font-size: 3em;
+            color: #d2691e;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.5em;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        @keyframes growAndRotate {
+            0% { transform: scale(1) rotate(0deg); }
+            50% { transform: scale(1.1) rotate(5deg); }
+            100% { transform: scale(1) rotate(0deg); }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="flower-container">
+            <div class="flower">
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="center"></div>
+            </div>
+            <div class="flower">
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="center"></div>
+            </div>
+            <div class="flower">
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="petal"></div>
+                <div class="center"></div>
+            </div>
+        </div>
+
+        <h1>Para el amor de mi vida</h1>
+        <p>
+            Cada vez que te veo, mi mundo se ilumina como el sol en un campo de girasoles. Eres mi flor favorita, la que le da color y alegría a cada uno de mis días. No hay palabras que puedan describir cuánto te amo, pero quiero que sepas que siempre estaré a tu lado, como los girasoles que siguen al sol. Te amo, hoy y siempre.
+        </p>
+    </div>
+
+</body>
+</html>
